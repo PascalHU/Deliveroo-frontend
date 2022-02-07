@@ -9,7 +9,7 @@ const Meals = ({ data }) => {
         <span className="price">{data.price} €</span>
         {data.popular && <span className="popular">• Populaire</span>}
       </div>
-      {data.picture && <img src={data.picture}></img>}
+      {data.picture && <img src={data.picture} alt=""></img>}
     </div>
   );
 };

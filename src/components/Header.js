@@ -13,7 +13,7 @@ const Header = ({ data }) => {
           <h1>{data.name}</h1>
           <p>{data.description}</p>
         </div>
-        <img src={data.picture} alt="photo restaurant" />
+        <img src={data.picture} alt="restaurant" />
       </div>
     </header>
   );
