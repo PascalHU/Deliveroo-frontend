@@ -25,3 +25,9 @@ header .restaurant img {
   border-radius: 5px;
   object-fit: cover;
 }
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}

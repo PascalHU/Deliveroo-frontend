@@ -16,6 +16,10 @@ body {
 }
 
 @media (max-width: 885px) {
+  header {
+    padding: 0 10px 0 10px;
+  }
+
   header .restaurant {
     flex-direction: column-reverse;
   }
@@ -34,6 +38,7 @@ body {
   .categories {
     width: 100%;
   }
+
   .sticky {
     position: -webkit-sticky;
     position: sticky;
