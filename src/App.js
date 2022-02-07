@@ -36,7 +36,7 @@ function App() {
             );
           })}
         </div>
-        <div className="basket"> PANIER</div>
+        <div className="basket sticky"> PANIER</div>
       </div>
     </div>
   );

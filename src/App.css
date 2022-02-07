@@ -3,7 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  width: 1188px;
+  max-width: 1188px;
   margin: 0 auto;
 }
 
@@ -13,4 +13,33 @@ body {
 
 .categories {
   width: 70%;
+}
+
+@media (max-width: 885px) {
+  header .restaurant {
+    flex-direction: column-reverse;
+  }
+  header .restaurant p {
+    max-width: 100%;
+  }
+  .menu-list .meal {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+  .categories {
+    width: 100%;
+  }
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: red;
+    padding: 50px;
+    font-size: 20px;
+  }
 }

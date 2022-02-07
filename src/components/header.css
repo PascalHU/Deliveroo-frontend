@@ -1,11 +1,8 @@
 header {
-  height: 320px;
+  padding-bottom: 20px;
   background-color: white;
 }
-.container {
-  width: 1188px;
-  margin: 0 auto;
-}
+
 .logo {
   margin-bottom: 10px;
   height: 50px;
@@ -19,11 +16,12 @@ header .restaurant {
   margin-top: 20px;
 }
 .restaurant p {
-  width: 70%;
+  max-width: 70%;
   color: gray;
   font-size: 20px;
 }
 header .restaurant img {
   height: 200px;
   border-radius: 5px;
+  object-fit: cover;
 }
