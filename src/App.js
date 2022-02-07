@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Categories from "./components/Categories";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [data, setData] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const searchData = async () => {
+      try {
+        // prettier-ignore
+        const response = await axios.get("https://reacteur-deliveroo-back.herokuapp.com/")
+        setData(response.data);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error.response);
+      }
+    };
+    searchData();
+  }, []);
+
+  return isLoading ? (
+    <span>Loading Screen</span>
+  ) : (
+    <div>
+      <Header data={data.restaurant} />
+      <div className="menu container">
+        <div className="categories">
+          {data.categories.map((categories, index) => {
+            return (
+              categories.meals.length !== 0 && (
+                <Categories key={index} categories={categories} />
+              )
+            );
+          })}
+        </div>
+        <div className="basket"> PANIER</div>
+      </div>
     </div>
   );
 }
