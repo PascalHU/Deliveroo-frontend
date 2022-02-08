@@ -94,7 +94,6 @@
   box-shadow: 0 -3px rgb(46 51 51 / 7%);
   background-color: white;
   padding: 20px 20px 20px 20px;
-  display: flex;
   flex-direction: column;
 }
 .minimize-basket-info .mini-basket-valid-btn {
@@ -109,6 +108,9 @@
   .minimize-empty-basket,
   .minimize-basket {
     justify-content: center;
+    display: flex;
+  }
+  .minimize-basket-info {
     display: flex;
   }
   .hidden {
