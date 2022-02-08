@@ -1,0 +1,22 @@
+.price {
+  padding-bottom: 20px;
+  width: 100%;
+}
+.pre-total {
+  padding-bottom: 20px;
+  border-top: lightgray 1px solid;
+  border-bottom: lightgray 1px solid;
+}
+.total,
+.sous-total,
+.fee {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}

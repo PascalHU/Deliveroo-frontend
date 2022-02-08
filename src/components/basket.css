@@ -1,0 +1,117 @@
+.basket,
+.empty-basket {
+  margin-top: 25px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 22px 24px 0 rgb(46 51 51 / 7%);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+.valid-basket,
+.empty-basket button,
+.minimize-empty-basket button {
+  margin: 10px;
+  width: 95%;
+  height: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  background-color: #00cdbd;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.empty-basket button,
+.minimize-empty-basket button {
+  background-color: lightgray;
+  color: gray;
+  margin-bottom: 0px;
+}
+.empty-basket {
+  height: 200px;
+}
+.basket-article {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 95%;
+}
+.empty-basket > div {
+  width: 95%;
+  height: 140px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.minimize-empty-basket,
+.minimize-basket {
+  display: none;
+  border-radius: 5px;
+  background-color: white;
+  padding-bottom: 10px;
+  box-shadow: 0 -3px rgb(46 51 51 / 7%);
+}
+.minimize-basket-button,
+.mini-basket-valid-btn {
+  margin: 15px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 15px 15px;
+  background-color: #822774;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.mini-basket-valid-btn:hover,
+.minimize-basket-button:hover {
+  cursor: pointer;
+  background-color: #8f3c82;
+}
+.mini-basket-valid-btn {
+  justify-content: center;
+}
+.minimize-basket-button > div {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #380931;
+}
+.hidden {
+  display: none;
+}
+.minimize-basket-info {
+  box-shadow: 0 -3px rgb(46 51 51 / 7%);
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.minimize-basket-info .mini-basket-valid-btn {
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .basket,
+  .empty-basket {
+    display: none;
+  }
+  .minimize-empty-basket,
+  .minimize-basket {
+    justify-content: center;
+    display: flex;
+  }
+  .hidden {
+    display: none;
+  }
+}

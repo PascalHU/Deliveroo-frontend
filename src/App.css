@@ -14,8 +14,11 @@ body {
 .categories {
   width: 70%;
 }
+.basket-area {
+  min-width: 30%;
+}
 
-@media (max-width: 885px) {
+@media (max-width: 928px) {
   header {
     padding: 0 10px 0 10px;
   }
@@ -38,13 +41,9 @@ body {
   .categories {
     width: 100%;
   }
-
-  .sticky {
+  .basket-area {
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    background-color: red;
-    padding: 50px;
-    font-size: 20px;
   }
 }

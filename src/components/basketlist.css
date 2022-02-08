@@ -1,0 +1,20 @@
+.element {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.element button {
+  border-radius: 90px;
+  border: 2px solid #00cdbd;
+  color: #00cdbd;
+  background-color: white;
+}
+
+.element span:last-child {
+  margin-left: auto;
+  width: 80px;
+  text-align: end;
+}
